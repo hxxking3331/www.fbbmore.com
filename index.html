@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Defaced by pexza</title>
+    <style>
+        body {
+            color: white; /* Set text color to white for visibility */
+            text-align: center; /* Center all text inside the body */
+            margin: 0; /* Remove default margins */
+        }
+        
+        h1 {
+            color: #f80808; /* Original text color */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: xx-large;
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            background: linear-gradient(50deg,rgb(240, 212, 212) 5%, rgb(236, 5, 5) 30%);
+            background-size: 200% auto; /* Wider range for smoothness */
+            -webkit-background-clip: text; /* Clip the background to text */
+            color: transparent; /* Make text color transparent to show gradient */
+            animation: shine 8s linear infinite; /* Faster and seamless shine */
+        }
+
+        @keyframes shine {
+            from {
+                background-position: -200% center; /* Start off-screen */
+            }
+            to {
+                background-position: 200% center; /* End slightly past the text */
+            }
+        }
+
+        h2 {
+            color: rgba(236, 5, 5);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: xx-large;
+            display: inline-block;
+        }
+
+        p {
+            color:gold;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size:larger;
+            font-style:italic;
+
+        }
+      
+
+    </style>
+
+    <style>
+        body {
+            background-color: black;
+            background-size: cover; /* Makes the background image zoomed out */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-position: center; /* Centers the image */
+            margin: 0; /* Removes default body margins */
+            height: 100vh; /* Sets the height of the body to the viewport height */
+        }
+    </style>
+</head>
+<body>
+    <img src="https://media.tenor.com/K-PrtTwBAUcAAAAM/skill-issue.gif.gif"
+        width="230" height="220">
+    <br>
+    <h1>YOU GOT DEFACED BY PEXZA</h1>
+    <br>
+    <h2>YOUR SITE IS TRASH</h2>
+    <br><br>
+    <p>Pexza was here</p>
+    <audio id="audioElement" src="audio.mp3"></audio>
+    <script>
+        const audio = document.getElementById('audioElement');
+    
+        function playAudio() {
+            audio.play().catch(err => console.error('Playback failed:', err));
+            document.removeEventListener('click', playAudio); // Ensure it only triggers once
+        }
+    
+        document.addEventListener('click', playAudio);
+    </script>
+
+
+</body>
+</html>
